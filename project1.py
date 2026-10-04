@@ -27,7 +27,8 @@ if user_choice == '1':
 
   # 1st story
   story = (
-    f"""It was about {number} {time} ago when I arrived at the hospital in a {transport}.
+    f"""
+    It was about {number} {time} ago when I arrived at the hospital in a {transport}.
     The hospital is a/an {adjective} place, there are a lot of {adjective2} {noun} here.There are nurses here who have {color} {part_body}.
     If someone wants to come into my room I told them that they have to {verb} first.I've decorated my room with {number_2} {noun2}.
     Today I talked to a doctor and they were wearing a {noun3} on their {part_body_2}. I heard that all doctors {verb} {noun_4} every day for breakfast.
