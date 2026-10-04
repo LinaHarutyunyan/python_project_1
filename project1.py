@@ -90,7 +90,7 @@ elif user_choice == '3':
   # Story 3 - Enchanted Castle
   story = f"""
   Dear {name.title()}, I am writing to you from a {adjective} castle in an enchanted forest.
-  I found myself here one day after going for a ride on a {color} {animal} in {place.title()}
+  I found myself here one day after going for a ride on a {color} {animal} in {place.title()}.
   There are {adjective2} {magical_creature.title()} and {adjective3} {magical_creature2.title()} here!
   In the {room} there is a pool full of {noun}. I fall asleep each night on a {noun2} of {noun3} and dream of {adjective4} {noun4}.
   It feels as though I have lived here for {number} {time}.
