@@ -1,10 +1,12 @@
 import random
 
-# List of silly words
+# Random silly words
 silly_words = ['Banana', 'Noodle', 'Bloop', 'Soggy Waffle']
 silly = random.choice(silly_words)
 
+# Welcome and template selection
 print('Welcome to Mad Libs')
+
 user_choice = input('Select a template [1-3]: ')
 print(f'You chose {user_choice}')
 
@@ -25,12 +27,12 @@ if user_choice == '1':
   noun_4 = input('Type another noun: ')
   adjective_3 = input('Type another adjective: ')
 
-  # 1st story
+  # Story 1 - Hospital
   story = (
     f"""
     It was about {number} {time} ago when I arrived at the hospital in a {transport}.
-    The hospital is a/an {adjective} place, there are a lot of {adjective2} {noun} here.There are nurses here who have {color} {part_body}.
-    If someone wants to come into my room I told them that they have to {verb} first.I've decorated my room with {number_2} {noun2}.
+    The hospital is a/an {adjective} place, there are a lot of {adjective2} {noun} here. There are nurses here who have {color} {part_body}.
+    If someone wants to come into my room I told them that they have to {verb} first. I've decorated my room with {number_2} {noun2}.
     Today I talked to a doctor and they were wearing a {noun3} on their {part_body_2}. I heard that all doctors {verb} {noun_4} every day for breakfast.
     The most {adjective_3} thing about being in the hospital is the {silly} {noun}!""")
   
@@ -42,27 +44,27 @@ elif user_choice == '2':
   name = input('Type a person\'s name: ')
   noun = input('Type a noun: ')
   adjective = input('Type an adjective(feeling): ')
-  verb = input('Type a verb: ')
+  verb = input('Type a verb (ending in -ing): ')
   adjective_2 = input('Type another adjective(feeling): ')
   animal = input('Type an animal: ')
   verb_2 = input('Type another verb: ')
   color = input('Type a color: ')
-  adverb = input('Type an adverb (anding in ly): ')
+  adverb = input('Type an adverb (ending in -ly): ')
   number = input('Type a number: ')
   time = input('Type a measure of time: ')
-  noun2 = input('Type anpther noun: ')
+  noun2 = input('Type another noun: ')
 
-  # 2nd story
+  # Story 2 - Camping
   story = f"""
-  This weekend I am going camping with {name.title()}. I packed my lantern,sleeping bag,
+  This weekend I am going camping with {name.title()}. I packed my lantern, sleeping bag,
   and {noun}. I am so {adjective} to {verb} in a tent. I am {adjective_2} we might see a/an {animal}.
   I hear they're kind of dangerous. While we're camping, we are going to hike, fish, and {verb_2}.
-  I have heard that the {color} lake is great for {verb}ing. Then we will {adverb} hike through the forest for {number} {time}.
+  I have heard that the {color} lake is great for {verb}. Then we will {adverb} hike through the forest for {number} {time}.
   If I see a {color} {animal} while hiking, I am going to bring it home as a pet!
   At night we will tell {number} {silly} stories and roast {noun2} around the campfire!!"""
   print(f'Here is your story:\n{story}')
 
-else:
+elif user_choice == '3':
  
   name = input('Type a person name: ')
   adjective = input('Type an adjective: ')
@@ -81,17 +83,22 @@ else:
   noun4 = input('Type another noun (plural): ')
   number = input('Type a number: ')
   time = input('Type a measure of time: ')
-  verb = input('Type a verb: ')
+  verb = input('Type a verb (ending in -ing): ')
   adjective5 = input('Type another adjective: ')
   noun5 = input('Type another noun: ')
    
-  #  3rd story
+  # Story 3 - Enchanted Castle
   story = f"""
   Dear {name.title()}, I am writing to you from a {adjective} castle in an enchanted forest.
   I found myself here one day after going for a ride on a {color} {animal} in {place.title()}
   There are {adjective2} {magical_creature.title()} and {adjective3} {magical_creature2.title()} here!
   In the {room} there is a pool full of {noun}. I fall asleep each night on a {noun2} of {noun3} and dream of {adjective4} {noun4}.
   It feels as though I have lived here for {number} {time}.
-  I hope one day you can visit,although the only way to get here now is {verb}ing on a {adjective5} {noun5}!!"""
-  print(f'Here is you story:\n{story}')
+  I hope one day you can visit, although the only way to get here now is {verb} on a {adjective5} {noun5}!!"""
+  print(f'Here is your story:\n{story}')
+  
+# Invalid choice
+else:
+    print("Invalid choice. Please select 1, 2, or 3.")
 
+print("\nThanks for playing Mad Libs! 🎉")
