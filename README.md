@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/33282088/README.1.md)[Uploading# 🐍 Python Projects
+# 🐍 Python Projects
 
 My Python projects. Each project has its own section below.
 
